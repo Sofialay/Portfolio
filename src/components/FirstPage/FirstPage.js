@@ -29,7 +29,7 @@ export default function FirstPage() {
         <section className="intro-page">
             <animated.div className="script-box" style={props} />
             <article className="intro-text">
-                <img className="intro-img" src={firstpage2} />
+                <img className="intro-img" src={firstpage2} alt="computer and light" />
                 <article className="quote" >
                     <h2>
                         I turn ideas into pixels
@@ -39,8 +39,8 @@ export default function FirstPage() {
                         A Front End Developer Jr focusing on build beautiful and accesible interfaces on the web.
                     </h3> 
                     <section className="social-media-icons">
-                        <a target="_blank" href="#"><img className="email-icon" src={email}/></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/sofialay/"><img className="linkedin-icon" src={linkedin}/></a> 
+                        <a target="_blank" rel="noreferrer" href="mailto: laysofiabelen@gmail.com"><img className="email-icon" src={email} alt="mail icon"/></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofialay/"><img className="linkedin-icon" src={linkedin} alt="IN icon"/></a> 
                     </section>
                 </article>
             </article>

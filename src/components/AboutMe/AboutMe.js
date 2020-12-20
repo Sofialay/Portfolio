@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <section className="about-me">
             <section className="about-me-img">
-                <img src={aboutme} />
+                <img src={aboutme} alt="myself"/>
             </section>
             <section className="personal-info">
                 <section className="about-me-info">
