@@ -13,7 +13,7 @@ let handleClick = () => setClicked(!clicked);
 
     return (
         <nav className="portfolio-header">
-            <img className={clicked ? "portfolio-header-x" : "portfolio-header-menu"} onChange={handleClick} src={clicked ? closeButton : menu } alt="menu bar"/>
+            <img className={clicked ? "portfolio-header-x" : "portfolio-header-menu"} onClick={handleClick} src={clicked ? closeButton : menu } alt="menu bar"/>
 
             <ul className={clicked ? 'nav-menu active' : 'nav-menu' }>
                 {
