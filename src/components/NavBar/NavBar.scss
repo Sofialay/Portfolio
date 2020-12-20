@@ -1,0 +1,55 @@
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    height: 10vh;
+    align-items: center;
+    width: 100%;
+    .portfolio-header-x {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 11;
+        width: 20px;
+        cursor: pointer;
+    }
+    .portfolio-header-menu {
+        cursor: pointer;
+    }
+    .portfolio-header-name {
+        letter-spacing: 1px;
+    }
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        background-color: cadetblue;
+        justify-content: center;
+        li {
+            width: 100%;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+            .nav-links {
+                text-decoration: none;
+                color:#8A79AF;
+                padding: 10px;
+                font-size: 40px;
+                text-transform: uppercase;
+                font-family: 'Staatliches', cursive;
+            }
+        }
+        &.active {
+                    top: 0;
+                    transition: all 0.3s ease-in-out;
+                    opacity: 5;
+                    background-color: #ffffff;
+                    z-index: 10;
+                }
+    }
+}

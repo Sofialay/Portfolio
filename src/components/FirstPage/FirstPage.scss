@@ -1,0 +1,66 @@
+.intro-page {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .intro-text {
+        position: fixed;
+        .intro-img{
+            max-width: 200px;
+        }
+        .quote {
+            h2 {
+                padding: 0 15px;
+                font-weight: 800;
+                font-size: 60px;
+                text-transform: uppercase;
+                color:#202020;
+                letter-spacing: 2px;
+                font-family: 'Staatliches', cursive;
+            }
+            h3{
+                padding: 0 10px;
+                color:#010101;
+                font-weight: 600;
+            }
+            .bio {
+                margin-top: 15px;
+            }
+            .social-media-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+                img {
+                    width: 25px;
+                    margin: 0 10px;
+                }
+                .email-icon {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+        .script-box {
+            will-change: width, height, left, top;
+            position: relative;
+          }
+          
+          @media (min-width: 700px) {
+              flex-direction: row-reverse;
+              .intro-text {
+                display: flex;
+                align-items: center;
+                .intro-img{
+                    max-width: 500px;
+                }
+                .quote {
+                    max-width: 600px;
+                }
+              }
+          }
+    }
