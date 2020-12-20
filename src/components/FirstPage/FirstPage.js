@@ -36,7 +36,7 @@ export default function FirstPage() {
                     </h2>
                     <h3 className="bio">Hi there, i'm Sofía!</h3>
                     <h3>
-                        A Front End Developer Jr focusing on build beautiful and accesible interfaces on the web.
+                        A Front End Developer Jr focusing on build beautiful and accesible web interfaces.
                     </h3> 
                     <section className="social-media-icons">
                         <a target="_blank" rel="noreferrer" href="mailto: laysofiabelen@gmail.com"><img className="email-icon" src={email} alt="mail icon"/></a>
