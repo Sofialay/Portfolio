@@ -1,0 +1,15 @@
+.card {
+    width: 280px;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    height: 220px;
+    text-align: center;
+    margin: 20px 5px;
+    .card-logo {
+        margin-top: 25px;
+        width: 150px;
+    }
+    .card-title {
+        letter-spacing: 2px;
+    }
+}

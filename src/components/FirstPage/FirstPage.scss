@@ -2,6 +2,7 @@
     width: 100%;
     height: calc(100vh - 10vh);
     background-size: cover;
+    background-color: #fffffc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,22 +10,21 @@
     text-align: center;
     .intro-text {
         position: fixed;
-        .intro-img{
-            max-width: 200px;
-        }
+        display: flex;
+        flex-direction: column-reverse;
         .quote {
             h2 {
                 padding: 0 15px;
                 font-weight: 800;
                 font-size: 60px;
                 text-transform: uppercase;
-                color:#202020;
+                color: #0f0f0f;
                 letter-spacing: 2px;
                 font-family: 'Staatliches', cursive;
             }
             h3{
                 padding: 0 10px;
-                color:#010101;
+                color: #0f0f0f;
                 font-weight: 600;
             }
             .bio {
@@ -44,19 +44,25 @@
                 }
             }
         }
+        .intro-img{
+            max-width: 150px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
     }
         .script-box {
             will-change: width, height, left, top;
             position: relative;
           }
           
-          @media (min-width: 700px) {
-              flex-direction: row-reverse;
+          @media (min-width: 768px) {
               .intro-text {
                 display: flex;
                 align-items: center;
+                flex-direction: row;
                 .intro-img{
-                    max-width: 500px;
+                    max-width: 200px;
+                    margin-left: 40px;
                 }
                 .quote {
                     max-width: 600px;

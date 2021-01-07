@@ -29,20 +29,20 @@ export default function FirstPage() {
         <section className="intro-page">
             <animated.div className="script-box" style={props} />
             <article className="intro-text">
-                <img className="intro-img" src={firstpage2} alt="computer and light" />
                 <article className="quote" >
                     <h2>
                         I turn ideas into pixels
                     </h2>
                     <h3 className="bio">Hi there, i'm Sofía!</h3>
                     <h3>
-                        A Front End Developer Jr focusing on build beautiful and accesible web interfaces.
+                        A Front End Developer Junior focusing on build beautiful and accesible web interfaces.
                     </h3> 
                     <section className="social-media-icons">
                         <a target="_blank" rel="noreferrer" href="mailto: laysofiabelen@gmail.com"><img className="email-icon" src={email} alt="mail icon"/></a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofialay/"><img className="linkedin-icon" src={linkedin} alt="IN icon"/></a> 
                     </section>
                 </article>
+                <img className="intro-img" src={firstpage2} alt="monitor illustration" />
             </article>
         </section>
     )

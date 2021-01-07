@@ -1,0 +1,32 @@
+.education {
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    overflow: scroll;
+    background-color:#f2f2f3;
+    .education-introduction {
+        margin: 20px 10px;
+        max-width: 350px;
+        .front-end {
+            h2 {
+                font-family: 'Staatliches', cursive;
+                color: #0f0f0f;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width: 768px) {
+        .education-introduction {
+            margin: 30px auto;
+            max-width: 580px;
+        }
+        .card-container {
+            flex-direction: row;
+        }
+    }
+}

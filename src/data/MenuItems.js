@@ -1,7 +1,7 @@
 const MenuItems = [
     {
         id: 1,
-        title: 'Menu',
+        title: 'Home',
         url: '/',
         cName: 'nav-links'
     },
