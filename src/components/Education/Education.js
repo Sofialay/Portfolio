@@ -48,14 +48,13 @@ export default function Education() {
             {
                 cardItems.map((item, index) => {
                     return(
-                        <div key={index}>
+                        <div key={index} className='cards-technologies'>
                             <Card logo={item.logo} title={item.title} />
                         </div>
                     )
                 })
             }
             </section>
-            
         </div>
     )
 }

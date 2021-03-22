@@ -1,15 +1,17 @@
 .card {
-    width: 280px;
-    backdrop-filter: blur(2px);
+    // width: 200px;
+    // backdrop-filter: blur(2px);
     border-radius: 5px;
-    height: 220px;
+    height: 180px;
     text-align: center;
-    margin: 20px 5px;
+    margin: 0 15px;
     .card-logo {
         margin-top: 25px;
-        width: 150px;
+        width: 100px;
     }
     .card-title {
         letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 18px;
     }
 }

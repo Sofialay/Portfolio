@@ -13,7 +13,7 @@ const MenuItems = [
     },
     {
         id: 3,
-        title: 'Education',
+        title: 'Education / Work',
         url: '/education',
         cName: 'nav-links'
     },
