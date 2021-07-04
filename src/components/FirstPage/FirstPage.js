@@ -22,9 +22,8 @@ export default function FirstPage() {
             await next({ width: '100%', background: '#FFFFC1' })
           }
         },
-      })
+    })
       
-
     return (
         <section className="intro-page">
             <animated.div className="script-box" style={props} />
@@ -39,7 +38,7 @@ export default function FirstPage() {
                     </h3> 
                     <section className="social-media-icons">
                         <a target="_blank" rel="noreferrer" href="mailto: laysofiabelen@gmail.com"><img className="email-icon" src={email} alt="mail icon"/></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofialay/"><img className="linkedin-icon" src={linkedin} alt="IN icon"/></a> 
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofialay/"><img className="linkedin-icon" src={linkedin} alt="linkedin icon"/></a> 
                     </section>
                 </article>
                 <img className="intro-img" src={firstpage2} alt="monitor illustration" />

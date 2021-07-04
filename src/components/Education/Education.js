@@ -39,9 +39,19 @@ export default function Education() {
     return (
         <div className="education">
             <section className="education-introduction">
+            <section className="front-end">
+                    <h2>2021 - current</h2>
+                    <h2>UMA HEALTH AI</h2>
+                    <h3>
+                        My responsibilities at UMA Health are to develop intuitive interfaces to efficiently connect users with their online doctor.
+                    </h3>
+                    <h3>For this I used the following tools on a daily basis:</h3>
+            </section>
                 <section className="front-end">
-                    <h2>2020 - Front End Development</h2>
-                    <h3>I studied Front End Development on the organization Ada ITW. 400 technical hours learning the following technologies:</h3>
+                    <h2>2020 </h2>
+                    <h2>Front End Development</h2>
+                    <h3>I studied Front End Development on the organization Ada ITW.</h3>
+                    <h3>400 technical hours learning the following technologies:</h3>
                 </section>
             </section>
             <section className="card-container">

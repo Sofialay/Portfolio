@@ -1,16 +1,14 @@
 .education {
-    width: 100vw;
-    height: calc(100vh - 10vh);
-    overflow: scroll;
+    width: 100%;
     background-color:#f2f2f3;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     .education-introduction {
         margin: 20px 10px;
-        max-width: 350px;
         .front-end {
+            margin: 20px 0;
             h2 {
                 font-family: 'Staatliches', cursive;
                 color: #0f0f0f;
@@ -19,6 +17,7 @@
             h3 {
                 margin-top: 10px;
                 font-weight: 300;
+                line-height: 28px;
             }
         }
     }
@@ -27,9 +26,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        // .cards-technologies {
-
-        // }
     }
     @media (min-width: 768px) {
         .education-introduction {
