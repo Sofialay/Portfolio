@@ -7,13 +7,13 @@ const MenuItems = [
     },
     {
         id: 2,
-        title: 'About Me',
+        title: 'About',
         url: '/aboutme',
         cName: 'nav-links'
     },
     {
         id: 3,
-        title: 'Education / Work',
+        title: 'Education',
         url: '/education',
         cName: 'nav-links'
     },

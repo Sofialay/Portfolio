@@ -4,21 +4,20 @@
     align-items: center;
     height: 10vh;
     width: 100%;
-    &.dark {
-        .portfolio-header {
-            background: #000;
-        }
-    }
 
     .header-burger {
+
         .portfolio-header-x {
             top: 20px;
+            right: 16px;
             position: absolute;
             z-index: 11;
-            width: 24px;
             cursor: pointer;
-            right: 16px;
+            svg {
+                font-size: 2rem;
+            }
         }
+
         .portfolio-header-menu {
             top: 20px;
             cursor: pointer;
@@ -28,31 +27,33 @@
                 font-size: 1.5rem;
             }
         }
+
         .nav-menu { 
             list-style: none;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             position: absolute;
-            top: -100%;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100vh;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 0 -10%);
             transition: all 0.3s ease-in-out;
-            opacity: 0;
-            justify-content: center;
+            padding: 16px;
             li {
                 width: 100%;
-                height: 80px;
-                margin: 0 auto;
-                text-align: center;
-                
+                margin: 16px auto;
+
+                // estilos en el click
                 .nav-links {
                     text-decoration: none;
-                    font-size: 40px;
-                    text-transform: uppercase;
+                    font-size: 2rem;
                     letter-spacing: 3px;
                     position: relative;
                     transition: 0.2s ease-in-out;
+                    color: #f2f2f3;
                     &:hover {
                        &::before {
                            content: '';
@@ -63,19 +64,19 @@
                            left: 0;
                            bottom: 0;
                            opacity: 0.5;
-                           animation-name: slide;
-                           animation-duration: 0.3s;
                        }
                     }
                 }
             }
+
             &.active {
-                top: 0%;
-                transition: all 0.3s ease-in-out;
-                opacity: 5;
-                background-color: #fffffc;
+                top: 0;
                 z-index: 10;
+                clip-path: circle(1000px at 90% -10%); 
+                -webkit-clip-path: circle(1000px at 90% -10%);
+                background-color: #9980fa;
             }
+
         }
 
         @media (min-width: 700px) {
@@ -94,15 +95,6 @@
                 }
             }
         }
+        
     }
 }
-
-@keyframes slide {
-    from {
-     width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-}
-

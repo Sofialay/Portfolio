@@ -40,7 +40,7 @@ function NavBar() {
                     }
                 </ul>
             </div>
-            <Switcher/>
+            <Switcher action={(e)=> setDarkMode(e)}/>
         </nav>
     )
 }
