@@ -1,72 +1,42 @@
 .intro-page {
     width: 100%;
-    height: calc(100vh - 10vh);
-    background-size: cover;
-    background-color: #fffffc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    .intro-text {
-        position: fixed;
+    height: calc(100vh -10vh);
+
+    .intro-img {
+        max-width: 150px;
+        margin: 16px auto;
+    }
+
+    .quote {
+        margin-top: 36px;
+        .bio {
+            font-weight: normal;
+            font-size: 1.2rem;
+            span {
+                font-weight: 800;
+                display: block;
+            }
+        }
+        h2 {
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+        h3 {
+            margin-top: 18px;
+            font-weight: normal;
+            font-size: 1.1rem;
+        }
+    }
+
+    .social-media-icons {
+        margin-top: 46px;
         display: flex;
-        flex-direction: column-reverse;
-        .quote {
-            h2 {
-                padding: 0 15px;
-                //font-weight: 800;
-                font-size: 60px;
-                text-transform: uppercase;
-                color: #0f0f0f;
-                letter-spacing: 2px;
-                font-family: 'Staatliches', cursive;
-            }
-            h3{
-                padding: 0 10px;
-                color: #0f0f0f;
-                font-weight: 400;
-            }
-            .bio {
-                margin-top: 15px;
-            }
-            .social-media-icons {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 10px 0;
-                img {
-                    width: 25px;
-                    margin: 0 10px;
-                }
-                .email-icon {
-                    padding-top: 5px;
-                }
-            }
-        }
-        .intro-img{
-            max-width: 150px;
-            margin: 0 auto;
-            padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        a svg {
+            font-size: 2rem;
+            color: #9980fa;
         }
     }
-        .script-box {
-            will-change: width, height, left, top;
-            position: relative;
-          }
-          
-          @media (min-width: 768px) {
-              .intro-text {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                .intro-img{
-                    max-width: 200px;
-                    margin-left: 40px;
-                }
-                .quote {
-                    max-width: 600px;
-                }
-              }
-          }
-    }
+}

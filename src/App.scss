@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
 
 body {
   margin: 0;
-  padding: 0;
-  //font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', sans-serif;
+  padding: 0 24px;
+
+  h1, 
+  h2, 
+  h3, 
+  p, 
+  span, 
+  a {
+    color: #292e31;
+  }
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
