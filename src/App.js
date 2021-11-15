@@ -15,8 +15,6 @@ import {
 function App() {
 	const [theme, setTheme] = useState('Classic')
 
-	console.log(theme, 'theme')
-
 	return (
 		<ThemeContext.Provider value={{theme, setTheme}}>
 			<section 

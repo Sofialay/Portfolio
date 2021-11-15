@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import ThemeContext from '../../../context/useContext'
-// import { useTheme }  from '../../../hooks/useTheme'
 import './Theme.scss'
 
 const Theme = ({ status }) => {
@@ -47,9 +46,8 @@ const Theme = ({ status }) => {
                     bgSecondary 
                 }, index)=> {
                     return(
-                        <li>
+                        <li key={index} >
                             <button 
-                                key={index} 
                                 className='theme__card' 
                                 onClick={()=> setTheme(name)}
                                 style={{ background: bg }}
