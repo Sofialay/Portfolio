@@ -1,8 +1,10 @@
+@import './Theme/Vars.scss';
+
 .portfolio-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 60px;
     width: 100%;
 
     .header-burger {
@@ -53,13 +55,13 @@
                     letter-spacing: 3px;
                     position: relative;
                     transition: 0.2s ease-in-out;
-                    color: #f2f2f3;
+                    // color: $font-color;
                     &:hover {
                        &::before {
                            content: '';
                            height: 40px;
                            width: 100%;
-                           background-color: #fffffc;
+                        //    background-color: $font-color;
                            position: absolute;
                            left: 0;
                            bottom: 0;
@@ -74,7 +76,7 @@
                 z-index: 10;
                 clip-path: circle(1000px at 90% -10%); 
                 -webkit-clip-path: circle(1000px at 90% -10%);
-                background-color: #9980fa;
+                background-color: $bg-secondary;
             }
 
         }
@@ -96,5 +98,16 @@
             }
         }
         
+    }
+
+    .paintBrush {
+        background-color: #e9ecef;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        border: transparent;
+        svg {
+            // color: $font-color;
+        }
     }
 }

@@ -1,6 +1,8 @@
+@import '../NavBar/Theme/Vars.scss';
+
 .intro-page {
     width: 100%;
-    height: calc(100vh -10vh);
+    height: calc(100vh - 60px);
 
     .intro-img {
         max-width: 150px;
@@ -35,9 +37,9 @@
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
-        a svg {
+        a {
             font-size: 2rem;
-            color: #9980fa;
+            color: $primary
         }
     }
 }

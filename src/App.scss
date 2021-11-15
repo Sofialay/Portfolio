@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+@import './components/NavBar/Theme/Vars.scss';
 
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
-  padding: 0 24px;
+  margin: 0;
+  padding: 0;
 
-  h1, 
-  h2, 
-  h3, 
-  p, 
-  span, 
-  a {
-    color: #292e31;
-  }
+  li {
+    list-style: none
+  };
 }
 
 * {
@@ -20,3 +16,75 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.App {
+  transition: 
+    font-size 0.25s ease-in, color 0.25s ease-in, 
+    background-color 0.25s ease-in;
+	padding: 0 16px;
+}
+
+.bg {
+  background-color: $background-color;
+}
+
+.font-color {
+  color: $font-color;
+} 
+
+.primary-color {
+  color: $primary;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+[data-theme=Light] {
+  background-color: $background-color;
+  color: $font-color;
+
+  .primary {
+      color: $primary;
+  }
+  .bg-secondary {
+      background: $bg-secondary;
+  }
+}
+
+[data-theme=Dark] {
+  background-color: #0b132b;
+  color: #e9fff9;
+
+  .primary {
+      color: #6fffe9;
+  }
+  .bg-secondary {
+      background: #1c2541;
+  }
+}
+
+[data-theme=Soft] {
+  background-color: #fcf6bd;
+  color: #292e31;
+
+  .primary {
+      color: #f694c1;
+  }
+  .bg-secondary {
+      background: #d0f4de;
+  }
+}
+
+[data-theme=Spooky] {
+  background-color: #191124;
+  color: #f6f5f6;
+
+  .primary {
+      color: #ff5f16;
+  }
+  .bg-secondary {
+      background: #4d1860;
+  }
+}
+

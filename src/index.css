@@ -17,23 +17,16 @@
 	--fs-400: 1.125rem;
 	--fs-300: 1rem;
 	--fs-200: 0.875rem;
+
+	/* font weight */
+	--fw-700: 700;
+	--fw-600: 600;
+	--fw-500: 500;
+	--fw-400: 400;
+	--fw-300: 300;
+	--fw-200: 200;
 }
 
-/* Color palette */
-
-.theme-light {
---color-primary: #0060df;
---color-secondary: #fbfbfe;
---color-accent: #fd6f53;
---font-color: #000000;
-}
-
-.theme-dark {
---color-primary: #17ed90;
---color-secondary: #2a2c2d;
---color-accent: #12cdea;
---font-color: #ffffff;
-}
 
 /* ------------------- */
 /* Reset               */
@@ -153,6 +146,14 @@ select {
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 
+.fw-700 { font-weight: var(--fw-700); }
+.fw-600 { font-weight: var(--fw-600); }
+.fw-500 { font-weight: var(--fw-500); }
+.fw-400 { font-weight: var(--fw-400); }
+.fw-300 { font-weight: var(--fw-300); }
+.fw-200 { font-weight: var(--fw-200); }
+
+
 .fs-900,
 .fs-800,
 .fs-700,
@@ -164,4 +165,8 @@ select {
 /* first child has no margin top and last child has no margin bottom */
 .flow > *:not(:first-child) {
 	margin-top: 1rem;
+}
+
+.align-center {
+	text-align: center;
 }

@@ -1,0 +1,46 @@
+@import './Vars.scss';
+
+.theme__container {
+    position: absolute;
+    opacity: 0;
+    
+    &.open {
+        position: static;
+        transition: all 0.2s ease-in-out;
+        display: block;
+        opacity: 1;
+    }
+
+    .theme {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        background-color: transparent;
+        justify-content: space-between;
+    
+        .theme__card {
+            text-align: center;
+            margin: 8px;
+            border: 2px solid $primary;
+            border-radius: 5px;
+            padding: 4px 8px;
+            &:focus {
+                outline: 1px solid $primary;
+                outline-offset: 2px;
+            }
+    
+            .colors {
+                padding: 8px;
+                display: flex;
+                div {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                }
+            }
+    
+        }
+    }
+}
+    
