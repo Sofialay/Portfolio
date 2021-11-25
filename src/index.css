@@ -25,6 +25,27 @@
 	--fw-400: 400;
 	--fw-300: 300;
 	--fw-200: 200;
+
+	/* primary colors */
+	--background-color: hsl(0, 0%, 100%);
+	--primary: hsl(252, 92%, 74%);
+	--bg-secondary: hsl(229, 30%, 39%);
+	--font-color: hsl(203, 9%, 18%);
+	--gray-soft: hsl(210, 16%, 93%);
+	--primary-without-hsl: 252deg, 92%, 74%;
+
+	/* shadow */
+	--shadow-color: 253deg 46% 44%;
+	--shadow-elevation-low:
+	-0.1px 0.1px 0.2px hsl(var(--shadow-color) / 0.35),
+    -0.5px 0.6px 0.9px -0.4px hsl(var(--shadow-color) / 0.35),
+    -0.9px 1.1px 1.6px -0.7px hsl(var(--shadow-color) / 0.35),
+    -1.5px 1.8px 2.6px -1.1px hsl(var(--shadow-color) / 0.35),
+    -2.3px 2.8px 4.1px -1.4px hsl(var(--shadow-color) / 0.35),
+    -3.7px 4.4px 6.5px -1.8px hsl(var(--shadow-color) / 0.35),
+    -5.6px 6.7px 9.8px -2.1px hsl(var(--shadow-color) / 0.35),
+    -8.2px 9.8px 14.4px -2.5px hsl(var(--shadow-color) / 0.35);
+
 }
 
 
@@ -170,3 +191,24 @@ select {
 .align-center {
 	text-align: center;
 }
+
+.shadow-low {
+	box-shadow: var(--shadow-elevation-low);
+}
+
+.bg {
+	background-color: var(--background-color);
+}
+  
+.font-color {
+	color: var(--font-color);
+} 
+
+.primary-color {
+	color: var(--primary);
+}
+
+.bg-secondary {
+	background-color: var(--bg-secondary);
+}
+

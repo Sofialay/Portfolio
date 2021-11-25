@@ -5,6 +5,8 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  box-sizing: border-box;
 
   li {
     list-style: none
@@ -24,67 +26,53 @@ body {
 	padding: 0 16px;
 }
 
-.bg {
-  background-color: $background-color;
-}
-
-.font-color {
-  color: $font-color;
-} 
-
-.primary-color {
-  color: $primary;
-}
-
-.bg-secondary {
-  background-color: $bg-secondary;
-}
-
 [data-theme=Classic] {
-  background-color: $background-color;
-  color: $font-color;
+	background-color: var(--background-color);
+	color: var(--font-color);
 
-  .primary {
-      color: $primary;
-  }
-  .bg-secondary {
-      background: $bg-secondary;
-  }
+	.primary-color {
+		color: var(--primary);
+	}
+	
+	.bg-secondary {
+		background: var(--bg-secondary);
+	}
 }
 
 [data-theme=Dark] {
-  background-color: #0b132b;
-  color: #e9fff9;
+	background-color: hsl(225, 59%, 11%);
+	color: hsl(164, 100%, 96%);
 
-  .primary {
-      color: #6fffe9;
-  }
-  .bg-secondary {
-      background: #1c2541;
-  }
+	.primary-color {
+		color: hsl(171, 100%, 72%);
+	}
+
+	.bg-secondary {
+		background: hsl(225, 40%, 18%);
+	}
 }
 
 [data-theme=Soft] {
-  background-color: #fcf6bd;
-  color: #292e31;
+	background-color: hsl(54, 91%, 86%);
+	color: hsl(203, 9%, 18%);
 
-  .primary {
-      color: #f694c1;
-  }
-  .bg-secondary {
-      background: #d0f4de;
-  }
+	.primary-color {
+		color: hsl(332, 84%, 77%);
+	}
+	.bg-secondary {
+		background: hsl(143, 62%, 89%);
+	}
 }
 
 [data-theme=Spooky] {
-  background-color: #191124;
-  color: #f6f5f6;
+	background-color: hsl(265, 36%, 10%);
+	color: hsl(300, 5%, 96%);
 
-  .primary {
-      color: #ff5f16;
-  }
-  .bg-secondary {
-      background: #4d1860;
-  }
+	.primary-color {
+		color: hsl(19, 100%, 54%);
+	}
+
+	.bg-secondary {
+		background: hsl(284, 60%, 24%);
+	}
 }
-

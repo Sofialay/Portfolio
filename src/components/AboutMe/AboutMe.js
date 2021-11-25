@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMe.scss';
 import linkedin from '../../assets/In.png';
 import instagram from '../../assets/instagram.png';
-import aboutme from '../../assets/aboutme.jpg'
+// import aboutme from '../../assets/aboutme.jpg'
 import { Link } from 'react-router-dom';
 
 export default function AboutMe() {
@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <section className="about-me">
             <div className="container-info">
-                <img className="about-me-photo" src={aboutme} alt="me in front of a mirror with a camera" />
+                {/* <img className="about-me-photo" src={aboutme} alt="me in front of a mirror with a camera" /> */}
                 <section className="about-me-info">
                     <h1>About me</h1>
                     <h2>23, based in Buenos Aires, Argentina.</h2>

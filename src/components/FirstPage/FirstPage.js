@@ -10,10 +10,10 @@ export default function FirstPage() {
 
     return (
         <main className='intro-page'>
-            <img className='intro-img' src={firstpage} alt='monitor illustration' />
+            <img className='intro-img ' src={firstpage} alt='monitor illustration' />
             <article className='quote' >
                 <h1 className='bio'>Hey there, I'm <span className='letter-spacing-1 fs-500'>Sofía Lay</span></h1>
-                <h2 className='primary'>
+                <h2 className='primary-color'>
                     and I turn ideas into pixels {theme === 'Spooky' ? '👻' : '👾' } 
                 </h2>
                 <h3>
@@ -26,21 +26,21 @@ export default function FirstPage() {
                         rel='noreferrer' 
                         href='https://github.com/Sofialay'
                     >
-                        <BsGithub className='primary'/>
+                        <BsGithub className='primary-color'/>
                     </a> 
                     <a 
                         target='_blank' 
                         rel='noreferrer' 
                         href='https://www.linkedin.com/in/sofialay/'
                     >
-                        <BsLinkedin className='primary'/>
+                        <BsLinkedin className='primary-color'/>
                     </a> 
                     <a 
                         target='_blank'
                         rel='noreferrer' 
                         href='mailto: laysofiabelen@gmail.com'
                     >
-                        <MdAlternateEmail className='primary'/>
+                        <MdAlternateEmail className='primary-color'/>
                     </a>
                 </nav>
             </article>

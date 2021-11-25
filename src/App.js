@@ -22,17 +22,17 @@ function App() {
 				data-theme={theme}
 			>
 				<BrowserRouter>
-						<NavBar/>
-						<Switch>
-						<React.Fragment>
-							<Route exact path="/" component={FirstPage} />
-							<div>
-								<Route exact path="/education" component={Education} />
-								<Route exact path="/aboutme" component={AboutMe} />
-								<Route exact path="/contact" component={Contact} />
-							</div>
-							</React.Fragment>
-						</Switch>
+						<NavBar />
+						<FirstPage />
+						<AboutMe />
+						<Contact />
+						{/* <Switch>
+						<React.Fragment> */}
+							{/* <Route exact path="/education" component={Education} />
+							<Route exact path="/aboutme" component={AboutMe} />
+							<Route exact path="/contact" component={Contact} /> */}
+							{/* </React.Fragment>
+						</Switch> */}
 				</BrowserRouter>
 			</section> 
 		</ThemeContext.Provider>

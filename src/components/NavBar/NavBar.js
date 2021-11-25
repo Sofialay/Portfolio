@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import MenuItems from '../../data/MenuItems'
 import Theme from './Theme/Theme'
 import { HiMenuAlt4 } from 'react-icons/hi'
-import { GrFormClose } from 'react-icons/gr'
+import { MdClose } from 'react-icons/md'
 import { FaPaintBrush } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './NavBar.scss'
@@ -15,20 +15,24 @@ function NavBar() {
 
     return (
         <>
-            <nav className={`portfolio-header`}>
+            <nav className='portfolio-header'>
                 <div className='header-burger'>
                     {/* Make a button */}
                     <div 
                         onClick={handleClick} 
                         className={clicked ? 'portfolio-header-x' : 'portfolio-header-menu'}
                     >
-                        { clicked ? <GrFormClose/> : <HiMenuAlt4/> } 
+                        { clicked ? 
+                            <MdClose className='primary' /> 
+                            : 
+                            <HiMenuAlt4 className='primary'/> 
+                        } 
                     </div>
-                    <ul className={clicked ? 'nav-menu active' : 'nav-menu' }>
+                    <ul className={clicked ? 'nav-menu active bg-secondary' : 'nav-menu' }>
                         {
                             MenuItems.map((item, index) => {
                                 return(
-                                <li key={index}> 
+                                <li key={index} className='font-color'> 
                                     <Link 
                                         className={item.cName} 
                                         to={item.url} 
@@ -46,7 +50,7 @@ function NavBar() {
                     className='paintBrush' 
                     onClick={()=> setOpenTheme(!openTheme)}
                 >
-                    <FaPaintBrush/>
+                    <FaPaintBrush />
                 </button>
             </nav>
             <Theme status={openTheme}/>

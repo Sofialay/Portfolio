@@ -2,10 +2,12 @@
 
 .intro-page {
     width: 100%;
-    height: calc(100vh - 60px);
 
     .intro-img {
-        max-width: 150px;
+        // max-width: 150px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
         margin: 24px auto;
     }
 
@@ -22,12 +24,12 @@
         }
         h2 {
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         h3 {
             margin-top: 16px;
             font-weight: normal;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
