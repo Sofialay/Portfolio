@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutMe.scss';
-import linkedin from '../../assets/In.png';
-import instagram from '../../assets/instagram.png';
+// import linkedin from '../../assets/In.png';
+// import instagram from '../../assets/instagram.png';
 // import aboutme from '../../assets/aboutme.jpg'
 // import { Link } from 'react-router-dom';
 
