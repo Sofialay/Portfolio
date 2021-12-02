@@ -26,19 +26,6 @@ body {
 	padding: 0 16px;
 }
 
-[data-theme=Classic] {
-	background-color: var(--background-color);
-	color: var(--font-color);
-
-	.primary-color {
-		color: var(--primary);
-	}
-	
-	.bg-secondary {
-		background: var(--bg-secondary);
-	}
-}
-
 [data-theme=Dark] {
 	background-color: hsl(225, 59%, 11%);
 	color: hsl(164, 100%, 96%);

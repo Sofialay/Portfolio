@@ -11,28 +11,27 @@ function NavBar() {
     const [openTheme, setOpenTheme] = useState(false)
     const [clicked, setClicked] = useState(false)
 
-    let handleClick = () => setClicked(!clicked)
+    const handleClick = () => setClicked(!clicked)
 
     return (
         <>
             <nav className='portfolio-header'>
                 <div className='header-burger'>
-                    {/* Make a button */}
-                    <div 
+                    <button 
                         onClick={handleClick} 
                         className={clicked ? 'portfolio-header-x' : 'portfolio-header-menu'}
                     >
                         { clicked ? 
-                            <MdClose className='primary' /> 
+                            <MdClose className='primary-color fw-700'/> 
                             : 
-                            <HiMenuAlt4 className='primary'/> 
+                            <HiMenuAlt4 className='primary-color fw-700'/> 
                         } 
-                    </div>
+                    </button>
                     <ul className={clicked ? 'nav-menu active bg-secondary' : 'nav-menu' }>
                         {
                             MenuItems.map((item, index) => {
                                 return(
-                                <li key={index} className='font-color'> 
+                                <li key={index} className='primary-color'> 
                                     <Link 
                                         className={item.cName} 
                                         to={item.url} 

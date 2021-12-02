@@ -28,7 +28,7 @@
 
 	/* primary colors */
 	--background-color: hsl(0, 0%, 100%);
-	--primary: hsl(252, 92%, 74%);
+	--primary: 	hsl(274, 100%, 75%);
 	--bg-secondary: hsl(229, 30%, 39%);
 	--font-color: hsl(203, 9%, 18%);
 	--gray-soft: hsl(210, 16%, 93%);
@@ -209,6 +209,6 @@ select {
 }
 
 .bg-secondary {
-	background-color: var(--bg-secondary);
+	background-color: var(--gray-soft);
 }
 
