@@ -1,50 +1,51 @@
+@import '../NavBar/Theme/Vars.scss';
+
 .about-me {
-    .container-info {
-        .about-me-photo {
-            width: 100%;
+
+    .about-me-info {
+        margin: 16px 0;
+        h2 {
+            margin-bottom: 16px;
         }
-        .about-me-info {
-            margin: 10px 0;
-            max-width: 600px;
-            text-align: start;
-            h1{
-                font-size: 40px;
-                letter-spacing: 2px;
-                margin-left: 15px;
-            }
-            h2 {
-                margin: 10px 20px;
-                font-weight: 300;
-                font-size: 20px;
-            }
-            .contact-link {
-                margin: 10px 20px;
-                button {
-                    width: 100px;
-                    height: 40px;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    background-color: transparent;
-                    font-weight: bold;
-                    border: 1px solid #010101;
-                    transition: 0.3s ease-in-out;
-                    cursor: pointer;
-                    &:hover {
-                        background-color: #010101;
-                        color: #f2f2f3;
-                    }
-                }
-            }
+        p {
+            margin: 8px 0;
         }
-        .social-media {
-            display: flex;
-            margin: 30px 0 0 0;
-            align-items: center;
-            justify-content: center;
-            .social-media-icon {
-                margin-right: 20px;
-                width: 40px;
-                height: 40px;
+    }
+
+    .technologies {
+        margin-top: 16px;
+        $circle1Pos: 13px 16px;
+        $circle2Pos: 44px 16px;
+        $circle3Pos: 77px 16px;
+        $circleSize: 23px 23px;
+        position: relative;
+        height: 360px;
+        border-radius: 8px;
+        background-color: $gray-soft;
+        background-image: 
+            radial-gradient(circle at 13px 12px, #f77766 10px, transparent 10px), 
+            radial-gradient(circle at 13px 12px, #d6f76b 10px, transparent 10px),
+            radial-gradient(circle at 13px 12px, #fde28a 10px, transparent 10px),
+            linear-gradient(hsl(252, 79%, 77%), hsl(252, 92%, 74%));
+        background-size: $circleSize, $circleSize, $circleSize, 100% 55px, 38px 100%, 200px 20px, 200px 20px, 253px 20px, 200px 20px, 200px 20px;
+        background-position: $circle1Pos, $circle2Pos, $circle3Pos, top left, top left, 79px 110px, 132px 150px, 79px 190px, 79px 230px, 132px 270px;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, no-repeat;
+        code {
+            position: absolute;
+            bottom: 50px;
+            left: 16px;
+            box-sizing: border-box;
+            // max-width: 80px;
+            span, p {
+              color: $primary; 
+              font-weight: 500;
+              font-size: 1.1rem;
+            }
+            .variable {
+                color: $font-color;
+            }
+            .name {
+                color: hsl(274, 100%, 75%);
             }
         }
     }
@@ -66,6 +67,7 @@
             }
         }
     }
+
     @media (min-width: 992px) {
         .container-info {
             align-items: center;
@@ -76,4 +78,5 @@
             }
         }
     }
+
 }
