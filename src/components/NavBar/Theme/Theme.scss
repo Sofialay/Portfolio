@@ -5,8 +5,10 @@
     left: 0;
     opacity: 0;
     max-width: 100%;
+    pointer-events: none;
     
     &.open {
+        pointer-events: all;
         position: static;
         transition: all 0.2s ease-in-out;
         display: block;
