@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import FirstPage from './components/FirstPage/FirstPage'
 import NavBar from './components/NavBar/NavBar'
-// import Education from './components/Education/Education'
+import Technologies from './components/Technologies/Technologies'
 import AboutMe from './components/AboutMe/AboutMe'
+import Experience from './components/Experience/Experience'
 import Contact from './components/Contact/Contact'
 import ThemeContext from './context/useContext'
 import './App.scss'
 import {
 	BrowserRouter, 
-	// Switch, 
-	// Route 
 } from 'react-router-dom'
 
 function App() {
@@ -22,17 +21,14 @@ function App() {
 				data-theme={theme}
 			>
 				<BrowserRouter>
+					<div className='bg font-color' data-theme={theme}>
 						<NavBar />
 						<FirstPage />
 						<AboutMe />
+						<Technologies/>
+						<Experience/>
 						<Contact />
-						{/* <Switch>
-						<React.Fragment> */}
-							{/* <Route exact path="/education" component={Education} />
-							<Route exact path="/aboutme" component={AboutMe} />
-							<Route exact path="/contact" component={Contact} /> */}
-							{/* </React.Fragment>
-						</Switch> */}
+					</div>
 				</BrowserRouter>
 			</section> 
 		</ThemeContext.Provider>

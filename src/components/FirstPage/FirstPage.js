@@ -12,13 +12,12 @@ export default function FirstPage() {
         <main className='intro-page'>
             <img className='intro-img ' src={firstpage} alt='monitor illustration' />
             <article className='quote' >
-                <h1 className='bio'>Hey there, I'm <span className='letter-spacing-1 fs-500'>Sofía Lay</span></h1>
+                <h1 className='bio'>Hey there, I'm Sofía and </h1>
                 <h2 className='primary-color'>
-                    and I turn ideas into pixels {theme === 'Spooky' ? '👻' : '👾' } 
+                    I turn ideas into pixels {theme === 'Spooky' ? '👻' : '👾' } 
                 </h2>
                 <h3>
-                    I'm currently a Front End Developer focused on creating beautiful 
-                    and accesible web interfaces. 
+                    Front End Developer based in Buenos Aires.
                 </h3> 
                 <nav className='social-media-icons'>
                     <a 
