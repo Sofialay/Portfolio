@@ -46,7 +46,7 @@ function NavBar() {
                     </ul>
                 </div> */}
                 <button 
-                    className='paintBrush' 
+                    className='paintBrush primary-color' 
                     onClick={()=> setOpenTheme(!openTheme)}
                 >
                     <FaPaintBrush />

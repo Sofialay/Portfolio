@@ -6,6 +6,7 @@
     align-items: center;
     height: 60px;
     width: 100%;
+    position: relative;
 
     .header-burger {
 
@@ -90,12 +91,14 @@
     }
 
     .paintBrush {
-        background-color: $gray-soft;
         border-radius: 50%;
-        width: 36px;
-        height: 36px;
+        width: 42px;
+        height: 42px;
         border: transparent;
+        position: absolute;
+        right: 8px;
         cursor: pointer;
+        background-color: $gray-soft;
     }
     
 }
