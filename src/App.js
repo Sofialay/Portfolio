@@ -21,7 +21,7 @@ function App() {
 				data-theme={theme}
 			>
 				<BrowserRouter>
-					<div className='bg font-color' data-theme={theme}>
+					<div className='bg font-color container' data-theme={theme}>
 						<NavBar />
 						<FirstPage />
 						<AboutMe />

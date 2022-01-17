@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
-import MenuItems from '../../data/MenuItems'
 import Theme from './Theme/Theme'
-import { HiMenuAlt4 } from 'react-icons/hi'
-import { MdClose } from 'react-icons/md'
+// import MenuItems from '../../data/MenuItems'
+// import { HiMenuAlt4 } from 'react-icons/hi'
+// import { MdClose } from 'react-icons/md'
+// import { Link } from 'react-router-dom'
 import { FaPaintBrush } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
 import './NavBar.scss'
 
 function NavBar() {
     const [openTheme, setOpenTheme] = useState(false)
-    const [clicked, setClicked] = useState(false)
+    // const [clicked, setClicked] = useState(false)
 
-    const handleClick = () => setClicked(!clicked)
+    // const handleClick = () => setClicked(!clicked)
 
     return (
         <>
             <nav className='portfolio-header'>
-                <div className='header-burger'>
+                {/* <div className='header-burger'>
                     <button 
                         onClick={handleClick} 
                         className={clicked ? 'portfolio-header-x' : 'portfolio-header-menu'}
@@ -44,14 +44,14 @@ function NavBar() {
                             })
                         }
                     </ul>
-                </div>
+                </div> */}
                 <button 
                     className='paintBrush' 
                     onClick={()=> setOpenTheme(!openTheme)}
                 >
                     <FaPaintBrush />
                 </button>
-            </nav>
+            </nav> 
             <Theme status={openTheme}/>
         </>
     )

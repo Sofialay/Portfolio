@@ -1,11 +1,27 @@
 @import '../NavBar/Theme/Vars.scss';
 
-.about-me-info {
-    margin: 16px 0;
+.section-info {
+    margin: 36px 0;
+    
     h2 {
         margin-bottom: 16px;
     }
     p {
         margin: 8px 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn-contact {
+        border: transparent;
+        width: 100%;
+        padding: 16px;
+        border-radius: 5px;
+        margin: 24px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
     }
 }

@@ -1,10 +1,48 @@
 import React from 'react'
+import './Experience.scss'
 
 const Experience = () => {
+
+    const experienceInfo = [
+        {
+            name: 'Front End',
+            company: 'Uma Health AI',
+            url: 'https://umasalud.com/',
+            date: 'December 2020 - current',
+            description: 'My job at Uma is to make and mantain interfaces for artificial intelligence models in a patient webapp.',
+            technologies: ['React JS', 'Firebase', 'Styled-components', 'Storybook', 'Cypress']
+        },
+        {
+            name: 'Web development Bootcamp',
+            company: 'Ada ITW',
+            url: 'https://adaitw.org/',
+            date: 'February 2020 - November 2020',
+            description: `I learned to develop applications in Ada's intensive bootcamp, where I had more than 400 hours of practice and theory.`,
+            technologies: ['HTML', 'CSS', 'Javascript', 'React JS', 'Jest']
+        }
+    ]
+
     return (
-        <section>
-            <h2 className='fs-600'>Experience</h2>
-            
+        <section className='section-info'>
+            <h2 className='fs-600'>Experience | Education</h2>
+            {experienceInfo.map((item, index) => {
+                return (
+                    <section className='experience' key={index}>
+                        <h3 className='primary-color fs-400'>
+                            {item.name} | <a href={item.url} target='_blank' rel='noreferrer'>
+                                {item.company}
+                            </a>
+                        </h3>
+                        <p className='fs-300'>{item.date}</p>
+                        <p> 
+                            {item.description}
+                        </p>
+                        <div className='technologiesList'>
+                            {item.technologies.map((tech, i) => <p key={i} className='fs-300 bg-secondary'>{tech}</p>)}
+                        </div>
+                    </section> 
+                )
+            })}
         </section>
     )
 }

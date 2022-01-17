@@ -178,6 +178,10 @@ select {
   line-height: 1.1;
 }
 
+p {
+	font-size: var(--fs-400);
+}
+
 /* spacing */
 /* first child has no margin top and last child has no margin bottom */
 .flow > *:not(:first-child) {
@@ -208,3 +212,6 @@ select {
 	background-color: var(--gray-soft);
 }
 
+.bg-primary-btn {
+	background-color: var(--primary);
+}

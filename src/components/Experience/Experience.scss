@@ -1,0 +1,14 @@
+@import '../NavBar/Theme/Vars.scss';
+
+.experience {
+    margin: 16px 0;
+    .technologiesList {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        p {
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}

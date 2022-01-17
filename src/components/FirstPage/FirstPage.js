@@ -17,7 +17,7 @@ export default function FirstPage() {
                     I turn ideas into pixels {theme === 'Spooky' ? '👻' : '👾' } 
                 </h2>
                 <h3>
-                    Front End Developer based in Buenos Aires.
+                    Front End Developer based in Buenos Aires, Argentina
                 </h3> 
                 <nav className='social-media-icons'>
                     <a 
