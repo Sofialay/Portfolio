@@ -1,8 +1,8 @@
 export const technologies = [
-    'HTML',
-    'CSS',
     'Javascript',
-    'Typescript', 
+    'Typescript',
+    'React JS', 
+    'Next JS',
     'Storybook', 
     'Styled-components'
 ]
