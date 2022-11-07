@@ -5,10 +5,18 @@ const Experience = () => {
 
     const experienceInfo = [
         {
-            name: 'Front End',
+            name: 'Front End Developer',
+            company: 'Paisanos',
+            url: 'https://paisanos.io/',
+            date: 'August 2022 - current',
+            description: 'Currently one of my main tasks consists of developing a wallet app for one of our main clients.',
+            technologies: ['React native', 'Typescript', 'Storybook']
+        },
+        {
+            name: 'Front End Developer',
             company: 'Uma Health AI',
             url: 'https://umasalud.com/',
-            date: 'December 2020 - current',
+            date: 'December 2020 - August 2022',
             description: 'My job at Uma is to make and mantain interfaces for artificial intelligence models in a patient webapp.',
             technologies: ['React JS', 'Firebase', 'Styled-components', 'Storybook', 'Cypress']
         },
